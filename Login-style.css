@@ -1,0 +1,26 @@
+@media (max-width: 400px) {
+  body {
+    font-size: 10px;
+    background-image: url("bugback.jpg");
+    position: relative;
+  }
+
+  .Form {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(179, 179, 179), rgb(114, 114, 114));
+    position: absolute;
+    font-size: 1.2rem;
+    top: 500px;
+    width: 100%;
+    text-align: center;
+  }
+  h1 {
+    font-size: 3rem;
+    position: absolute;
+    top: 150px;
+    text-align: center;
+    left: 25%;
+    color: white;
+  }
+}

@@ -1,0 +1,44 @@
+html,
+body {
+  background-image: url("desktopBG.jpg");
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10px;
+  margin: 0;
+  color: white;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  margin-top: 0;
+  padding: 1rem;
+  list-style: none;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+form {
+  font-size: 3rem;
+}
+input {
+  background-color: rgba(35, 37, 22, 0.651);
+}
+.signup-btn {
+  text-align: center;
+}
+.signup-btn a {
+  background-color: yellow;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 2rem;
+}

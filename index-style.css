@@ -1,0 +1,172 @@
+html,
+body,
+h1,
+p,
+button {
+  height: auto;
+  color: aliceblue;
+  font-size: 8px;
+}
+body {
+  background-image: url("desktopBG.jpg");
+}
+.flexpage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 10rem;
+  margin-left: 5rem;
+  gap: 10rem;
+}
+
+.welcome-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-left: 10rem;
+}
+.welcome-flex h1 {
+  font-size: 7rem;
+}
+.welcome-flex p {
+  font-size: 4rem;
+}
+legend {
+  text-align: center;
+  font-size: 3rem;
+}
+.selector-container {
+  display: flex;
+  flex-direction: column;
+}
+.login-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.select-btn {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.select-btn a {
+  font-size: 2rem;
+  background-color: rgba(243, 240, 63, 0.87);
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+  border-radius: 1rem;
+  max-width: 10rem;
+  margin: 0;
+  text-decoration: none;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+}
+.rent-btn {
+  margin: 2rem;
+}
+.rent-btn a {
+  font-size: 2rem;
+  background-color: rgba(243, 240, 63, 0.87);
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+  border-radius: 1rem;
+  max-width: 10rem;
+  text-decoration: none;
+}
+.button-flex {
+  display: none;
+}
+.car-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  grid-column: 1 / span 2;
+}
+.middle-title {
+  text-align: center;
+  font-size: 3rem;
+}
+.cars-list-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.cars-list-flex * {
+  border-radius: 2rem;
+  max-width: 400px;
+  width: 100%;
+}
+.cars-list-flex *:hover {
+  opacity: 0.9;
+}
+.rent-btn:nth-child(3) {
+  text-align: center;
+  margin: 5rem;
+}
+.rent-btn:nth-child(3) a {
+  font-size: 3rem;
+  background-color: rgba(243, 240, 63, 0.87);
+  color: rgb(0, 0, 0);
+  padding: 2rem;
+  border-radius: 2rem;
+  max-width: 10rem;
+  text-decoration: none;
+}
+
+@media (max-width: 400px) {
+  body {
+    background-image: url("bugback.jpg");
+  }
+  .flexpage {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  .welcome-flex h1 {
+    font-size: 4rem;
+    text-shadow: 1px 1px #fffb00;
+  }
+  .welcome-flex p {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px #fbff00;
+    margin-bottom: 0;
+  }
+  .welcome-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .button-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: stretch;
+  }
+  .button-flex * {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    background-color: yellow;
+    text-align: center;
+    padding: 5px;
+    border-radius: 50px;
+  }
+  .selector-container {
+    margin-top: 0;
+    max-height: 300px;
+    margin-bottom: 1rem;
+  }
+  .selector-container .login-container {
+    display: none;
+  }
+  .cars-list-flex,
+  .rent-btn,
+  .car-list-container {
+    display: none;
+  }
+}
